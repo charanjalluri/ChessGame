@@ -2,125 +2,114 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Chess Board</title>
-    <link rel="stylesheet" type="text/css" href="_css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="_css/styles.css">
-    <link rel="stylesheet" type="text/css" href="_css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="_css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="_css/jquery-ui.min.css">
-
-
-    <script type="text/javascript" rel="script" src="_js/jquery-3.2.0.min.js"></script>
-    <script type="text/javascript" rel="script" src="_js/jquery-ui.min.js"></script>
-    <script type="text/javascript" rel="script" src="_js/bootstrap.min.js"></script>
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
+    <div class="container">
 
-    <div id="message-div"></div>
-    <div class="container" style="position: absolute; top: 40px; left: 410px; width: 522px; height: 522px;border: 1px solid black;">
-        <div id="row-8" class="row">
+      <h1>MASTER CHESS</h1>
 
-            <div id="cell-white-8A" class="col-md-1 cell"><span id="p-black-castle-1" class="black-piece">&#9820</span></div>
-            <div id="cell-black-8B" class="col-md-1 cell"><span id="p-black-knight-1" class="black-piece">&#9822</span></div>
-            <div id="cell-white-8C" class="col-md-1 cell"><span id="p-black-bishop-1" class="black-piece">&#9821</span></div>
-            <div id="cell-black-8D" class="col-md-1 cell"><span id="p-black-queen" class="black-piece">&#9819</span></div>
-            <div id="cell-white-8E" class="col-md-1 cell"><span id="p-black-king" class="black-piece">&#9818</span></div>
-            <div id="cell-black-8F" class="col-md-1 cell"><span id="p-black-bishop-2" class="black-piece">&#9821</span></div>
-            <div id="cell-white-8G" class="col-md-1 cell"><span id="p-black-knight-2" class="black-piece">&#9822</span></div>
-            <div id="cell-black-8H" class="col-md-1 cell"><span id="p-black-castle-2" class="black-piece">&#9820</span></div>
+      <ul>
 
-        </div>
-        <div id="row-7" class="row">
-
-            <div id="cell-black-7A" class="col-md-1 cell"><span id="p-black-pawn-1" class="black-piece">&#9823</span></div>
-            <div id="cell-white-7B" class="col-md-1 cell"><span id="p-black-pawn-2" class="black-piece">&#9823</span></div>
-            <div id="cell-black-7C" class="col-md-1 cell"><span id="p-black-pawn-3" class="black-piece">&#9823</span></div>
-            <div id="cell-white-7D" class="col-md-1 cell"><span id="p-black-pawn-4" class="black-piece">&#9823</span></div>
-            <div id="cell-black-7E" class="col-md-1 cell"><span id="p-black-pawn-5" class="black-piece">&#9823</span></div>
-            <div id="cell-white-7F" class="col-md-1 cell"><span id="p-black-pawn-6" class="black-piece">&#9823</span></div>
-            <div id="cell-black-7G" class="col-md-1 cell"><span id="p-black-pawn-7" class="black-piece">&#9823</span></div>
-            <div id="cell-white-7H" class="col-md-1 cell"><span id="p-black-pawn-8" class="black-piece">&#9823</span></div>
-
+        <div class="div" id="row8">
+             <li class="box" id="b801">Brook</li>
+             <li class="box" id="b802">Bknight</li>
+             <li class="box" id="b803">Bbishop</li>
+             <li class="box" id="b804">Bqueen</li>
+             <li class="box" id="b805">Bking</li>
+             <li class="box" id="b806">Bbishop</li>
+             <li class="box" id="b807">Bknight</li>
+             <li class="box" id="b808">Brook</li>
         </div>
 
-        <div id="row-6" class="row">
-
-            <div id="cell-white-6A" class="col-md-1 cell"></div>
-            <div id="cell-black-6B" class="col-md-1 cell"></div>
-            <div id="cell-white-6C" class="col-md-1 cell"></div>
-            <div id="cell-black-6D" class="col-md-1 cell"></div>
-            <div id="cell-white-6E" class="col-md-1 cell"></div>
-            <div id="cell-black-6F" class="col-md-1 cell"></div>
-            <div id="cell-white-6G" class="col-md-1 cell"></div>
-            <div id="cell-black-6H" class="col-md-1 cell"></div>
-
-        </div>
-        <div id="row-5" class="row">
-
-            <div id="cell-black-5A" class="col-md-1 cell"></div>
-            <div id="cell-white-5B" class="col-md-1 cell"></div>
-            <div id="cell-black-5C" class="col-md-1 cell"></div>
-            <div id="cell-white-5D" class="col-md-1 cell"></div>
-            <div id="cell-black-5E" class="col-md-1 cell"></div>
-            <div id="cell-white-5F" class="col-md-1 cell"></div>
-            <div id="cell-black-5G" class="col-md-1 cell"></div>
-            <div id="cell-white-5H" class="col-md-1 cell"></div>
-
+        <div class="div" id="row7">
+            <li class="box" id="b701">Bpawn</li>
+            <li class="box" id="b702">Bpawn</li>
+            <li class="box" id="b703">Bpawn</li>
+            <li class="box" id="b704">Bpawn</li>
+            <li class="box" id="b705">Bpawn</li>
+            <li class="box" id="b706">Bpawn</li>
+            <li class="box" id="b707">Bpawn</li>
+            <li class="box" id="b708">Bpawn</li>
         </div>
 
-        <div id="row-4" class="row">
-
-            <div id="cell-white-4A" class="col-md-1 cell"></div>
-            <div id="cell-black-4B" class="col-md-1 cell"></div>
-            <div id="cell-white-4C" class="col-md-1 cell"></div>
-            <div id="cell-black-4D" class="col-md-1 cell"></div>
-            <div id="cell-white-4E" class="col-md-1 cell"></div>
-            <div id="cell-black-4F" class="col-md-1 cell"></div>
-            <div id="cell-white-4G" class="col-md-1 cell"></div>
-            <div id="cell-black-4H" class="col-md-1 cell"></div>
-
-        </div>
-        <div id="row-3" class="row">
-
-            <div id="cell-black-3A" class="col-md-1 cell"></div>
-            <div id="cell-white-3B" class="col-md-1 cell"></div>
-            <div id="cell-black-3C" class="col-md-1 cell"></div>
-            <div id="cell-white-3D" class="col-md-1 cell"></div>
-            <div id="cell-black-3E" class="col-md-1 cell"></div>
-            <div id="cell-white-3F" class="col-md-1 cell"></div>
-            <div id="cell-black-3G" class="col-md-1 cell"></div>
-            <div id="cell-white-3H" class="col-md-1 cell"></div>
-
+        <div class="div" id="row6">
+            <li class="box" id="b601"></li>
+            <li class="box" id="b602"></li>
+            <li class="box" id="b603"></li>
+            <li class="box" id="b604"></li>
+            <li class="box" id="b605"></li>
+            <li class="box" id="b606"></li>
+            <li class="box" id="b607"></li>
+            <li class="box" id="b608"></li>
         </div>
 
-        <div id="row-2" class="row">
-
-            <div id="cell-white-2A" class="col-md-1 cell"><span id="p-white-pawn-1" class="white-piece">&#9817</span></div>
-            <div id="cell-black-2B" class="col-md-1 cell"><span id="p-white-pawn-2" class="white-piece">&#9817</span></div>
-            <div id="cell-white-2C" class="col-md-1 cell"><span id="p-white-pawn-3" class="white-piece">&#9817</span></div>
-            <div id="cell-black-2D" class="col-md-1 cell"><span id="p-white-pawn-4" class="white-piece">&#9817</span></div>
-            <div id="cell-white-2E" class="col-md-1 cell"><span id="p-white-pawn-5" class="white-piece">&#9817</span></div>
-            <div id="cell-black-2F" class="col-md-1 cell"><span id="p-white-pawn-6" class="white-piece">&#9817</span></div>
-            <div id="cell-white-2G" class="col-md-1 cell"><span id="p-white-pawn-7" class="white-piece">&#9817</span></div>
-            <div id="cell-black-2H" class="col-md-1 cell"><span id="p-white-pawn-8" class="white-piece">&#9817</span></div>
-
+        <div class="div" id="row5">
+            <li class="box" id="b501"></li>
+            <li class="box" id="b502"></li>
+            <li class="box" id="b503"></li>
+            <li class="box" id="b504"></li>
+            <li class="box" id="b505"></li>
+            <li class="box" id="b506"></li>
+            <li class="box" id="b507"></li>
+            <li class="box" id="b508"></li>
         </div>
-        <div id="row-1" class="row">
 
-            <div id="cell-black-1A" class="col-md-1 cell"><span id="p-white-castle-1" class="white-piece">&#9814</span></div>
-            <div id="cell-white-1B" class="col-md-1 cell"><span id="p-white-knight-1" class="white-piece">&#9816</span></div>
-            <div id="cell-black-1C" class="col-md-1 cell"><span id="p-white-bishop-1" class="white-piece">&#9815</span></div>
-            <div id="cell-white-1D" class="col-md-1 cell"><span id="p-white-queen" class="white-piece">&#9813</span></div>
-            <div id="cell-black-1E" class="col-md-1 cell"><span id="p-white-king" class="white-piece">&#9812</span></div>
-            <div id="cell-white-1F" class="col-md-1 cell"><span id="p-white-bishop-2" class="white-piece">&#9815</span></div>
-            <div id="cell-black-1G" class="col-md-1 cell"><span id="p-white-knight-2" class="white-piece">&#9816</span></div>
-            <div id="cell-white-1H" class="col-md-1 cell"><span id="p-white-castle-2" class="white-piece">&#9814</span></div>
-
+        <div class="div" id="row4">
+            <li class="box" id="b401"></li>
+            <li class="box" id="b402"></li>
+            <li class="box" id="b403"></li>
+            <li class="box" id="b404"></li>
+            <li class="box" id="b405"></li>
+            <li class="box" id="b406"></li>
+            <li class="box" id="b407"></li>
+            <li class="box" id="b408"></li>
         </div>
+
+        <div class="div" id="row3">
+            <li class="box" id="b301"></li>
+            <li class="box" id="b302"></li>
+            <li class="box" id="b303"></li>
+            <li class="box" id="b304"></li>
+            <li class="box" id="b305"></li>
+            <li class="box" id="b306"></li>
+            <li class="box" id="b307"></li>
+            <li class="box" id="b308"></li>
+        </div>
+
+        <div class="div" id="row2">
+            <li class="box" id="b201">Wpawn</li>
+            <li class="box" id="b202">Wpawn</li>
+            <li class="box" id="b203">Wpawn</li>
+            <li class="box" id="b204">Wpawn</li>
+            <li class="box" id="b205">Wpawn</li>
+            <li class="box" id="b206">Wpawn</li>
+            <li class="box" id="b207">Wpawn</li>
+            <li class="box" id="b208">Wpawn</li>
+        </div>
+
+        <div class="div" id="row1">
+            <li class="box" id="b101">Wrook</li>
+            <li class="box" id="b102">Wknight</li>
+            <li class="box" id="b103">Wbishop</li>
+            <li class="box" id="b104">Wqueen</li>
+            <li class="box" id="b105">Wking</li>
+            <li class="box" id="b106">Wbishop</li>
+            <li class="box" id="b107">Wknight</li>
+            <li class="box" id="b108">Wrook</li>
+        </div>
+      </ul>
+
+      <h2 id="tog">White's Turn</h2>
+      <h2 id="reset-btn">Reset</h2>
 
     </div>
 
-    <script type="text/javascript" rel="script" src="_js/script.js"></script>
+
+  <script src="logic.js"></script>
 </body>
 </html>
